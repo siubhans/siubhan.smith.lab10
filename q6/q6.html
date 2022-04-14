@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siubhan Smith Q6</title>
+    <script src="q6.js"></script>
+    <style>
+      .containerA {
+        font-family: "Courier New", Courier, monospace;
+        background-color: #fcff82;
+        width: 30%;
+        display: block;
+        margin: auto;
+        height: 700px;
+        padding: 10px;
+        border: 3px solid rgba(16, 16, 16, 0.2);
+        box-shadow: 4px 6px rgba(65, 65, 65, 0.2);
+      }
+      @media (max-width: 700px) {
+        .containerA {
+          width: 80%;
+        }
+      }
+      .containerForButton {
+        display: flex;
+        justify-content: space-between;
+      }
+      .add {
+        width: 40%;
+      }
+      .remove {
+        width: 40%;
+      }
+      #add,
+      #remove {
+        font-family: "Courier New", Courier, monospace;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        font-size: 100%;
+        background-color: #ff9c6d;
+        border: 2px solid rgba(16, 16, 16, 0.2);
+      }
+      #add:hover,
+      #remove:hover {
+        background-color: #afc5ff;
+        cursor: pointer;
+      }
+      .containerForList {
+        text-align: center;
+      }
+      #theList {
+        display: inline-block;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containerA">
+      <div class="containerForButton">
+        <div class="add">
+          <button id="add" onclick="addItem();">Add Item</button>
+        </div>
+        <div class="remove">
+          <button id="remove" onclick="removeItem();">Remove Item</button>
+        </div>
+      </div>
+      <div class="containerForList">
+        <ul id="theList"></ul>
+      </div>
+    </div>
+  </body>
+</html>
