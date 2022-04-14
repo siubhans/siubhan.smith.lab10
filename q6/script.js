@@ -10,8 +10,12 @@ function printList() {
 //this is the function to add an item
 function addItem() {
   let newItem = prompt("What item would you like to add?");
-  list.push(newItem);
-  printList();
+  if (newItem == "" || newItem == " ") {
+    alert("enter in a an item!");
+  } else {
+    list.push(newItem);
+    printList();
+  }
 }
 
 //this is the function to remove an item
